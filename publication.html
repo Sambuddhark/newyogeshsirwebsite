@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UTPL - Publication</title>
+    <meta name="description" content="Morden Bootstrap HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon96.png">
+
+    <!-- ======= All CSS Plugins here ======== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Dark css here -->
+    <link rel="stylesheet" href="assets/css/dark.css">
+
+    <!-- Rtl css here -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("dark");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.documentElement.classList.remove("dark");
+        } 
+    </script>
+
+</head>
+
+<body class="bg-dark_primary_bg">
+
+    <button class="light__dark--btn style__fixed" id="light__to--dark">
+        <svg class="dark--mode__icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+            <title>Moon</title>
+            <path
+                d="M264 480A232 232 0 0132 248c0-94 54-178.28 137.61-214.67a16 16 0 0121.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0121.06 21.06C442.28 426 358 480 264 480z">
+            </path>
+        </svg>
+        <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+            <title>Sunny</title>
+            <path
+                d="M256 118a22 22 0 01-22-22V48a22 22 0 0144 0v48a22 22 0 01-22 22zM256 486a22 22 0 01-22-22v-48a22 22 0 0144 0v48a22 22 0 01-22 22zM369.14 164.86a22 22 0 01-15.56-37.55l33.94-33.94a22 22 0 0131.11 31.11l-33.94 33.94a21.93 21.93 0 01-15.55 6.44zM108.92 425.08a22 22 0 01-15.55-37.56l33.94-33.94a22 22 0 1131.11 31.11l-33.94 33.94a21.94 21.94 0 01-15.56 6.45zM464 278h-48a22 22 0 010-44h48a22 22 0 010 44zM96 278H48a22 22 0 010-44h48a22 22 0 010 44zM403.08 425.08a21.94 21.94 0 01-15.56-6.45l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.55 37.56zM142.86 164.86a21.89 21.89 0 01-15.55-6.44l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.56 37.55zM256 358a102 102 0 11102-102 102.12 102.12 0 01-102 102z">
+            </path>
+        </svg>
+    </button>
+
+    <!-- Start header area -->
+    <header class="header__section  header__transparent">
+        <div class="header__sticky">
+            <div class="container">
+                <div class="main__header d-flex justify-content-between align-items-center">
+                    <div class="main__logo">
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.html">
+                                UTPL
+                            </a></h1>
+                    </div>
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
+                            </svg>
+                            <span class="visually-hidden">Offcanvas Menu Open</span>
+                        </a>
+                    </div>
+                    <div class="main__header--right d-flex align-items-center d-none d-lg-block">
+                        <div class="header__menu menu_border--none">
+                            <nav class="header__menu--navigation">
+                                <ul class="header__menu--wrapper d-flex">
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="about.html">Prof. Srivastava</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="research.html">Research</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="publication.html">Publication</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="project.html">Projects</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="group.html">Group</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="lab.html">Lab</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="opportunity.html">Opportunities</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header area -->
+
+    <!-- Start Offcanvas header menu -->
+    <div class="offcanvas__header">
+        <div class="offcanvas__inner">
+            <div class="offcanvas__logo">
+                <a class="offcanvas__logo_link" href="index.html">
+                    <h1>UTPL</h1>
+                    <!-- <img src="assets/img/logo/nav-log.png" alt="Logo-img" width="158" height="36"> -->
+                </a>
+                <button class="offcanvas__close--btn" data-offcanvas>close</button>
+            </div>
+            <nav class="offcanvas__menu">
+                <ul class="offcanvas__menu_ul">
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="index.html">Home</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="about.html">Prof. Srivastava</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="research.html">Research</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="publication.html">Publication</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="project.html">Projects</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="group.html">Group</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="lab.html">Lab</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="opportunity.html">Opportunities</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Offcanvas header menu -->
+
+    <main class="main__content_wrapper">
+        <!-- Start portfolio section -->
+        <section class="portfolio__section portfolio__section--bg section--padding" id="portfolio">
+            <div class="page__heading">
+                <!-- <h1 class="page__heading--title">Publication</h1> -->
+                <h2 class="page__heading--subtitle" style="padding-bottom: 100px;"><span>PUBLICATION</span></h2>
+            </div><br>
+            <h2 class="text-center">Peer reviewed journal publications (2016-Present)<br>
+                <a href="https://scholar.google.com/citations?user=xe8IutUAAAAJ&hl=en" target="_blank">https://scholar.google.com/citations?user=xe8IutUAAAAJ&hl=en</a>
+            </h2>
+            <div class="container">
+                <div class="custom-ol">
+                    <ol>
+                        <h2 class="text-center">Ph.D. Thesis</h2>
+                        <li style="line-height: 1.5;">Yogesh Kumar Srivastava “Superconductor Terahertz Photonics” DOI: 10.32657/10220/47469, recommended by my Examiners and Thesis Advisory Committee</li>
+                        <h2 class="text-center">Peer Reviewed Journal Article</h2>
+                        <li style="line-height: 1.5;">W. Wang, Y. K. Srivastava, T. Tan, Z. Wang and R. Singh, Brillouin Zone Folding Driven Bound States in the Continuum metasurfaces, Nat. Commun. 2023, #NCOMMS-22-39591B (DOI:10.1038/s41467-023-38367-y).</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, M. Gupta, M. Manjappa, P. Agarwal, J. Lesueur, and R. Singh “The Elusive High-Tc Superinductor” 2022, arXiv:2209.01342, (under review).</li>
+                        <li style="line-height: 1.5;">D. Kumar, M. Gupta, Y. K. Srivastava, K. M. Devi, R. Kumar, and D. R. Chowdhury “Photo Induced Dynamic Tailoring of Near-field Coupled Terahertz Metasurfaces and its effect on Coulomb parameters”, J. Opt, 2022, 24, 045101.</li>
+                        <li style="line-height: 1.5;">K. V. Sreekanth, R. Medwal, Y. K. Srivastava, M. Manjappa, R. S. Rawat, and R. Singh, “Dynamic color generation with electrically tunable thin film optical coatings” Nano Letters, 2021, 21, 23, 10070–10075.</li>
+                        <li style="line-height: 1.5;">W. Wang*, Y. K. Srivastava*, M. Gupta, Z. Wang, and R. Singh, “Photoswitchable Anapole Metasurfaces”, Adv. Opt. Mater. 2021, 2102284 (in press). (*Co- first authors)</li>
+                        <li style="line-height: 1.5;">T. C. Tan, Y. K. Srivastava, R. T. Ako, W. Wang, M. Bhaskaran, S. Sriram, I. Al-Naib, E. Plum, R. Singh “Active Control of Nanodielectric-Induced THz Quasi-BIC in Flexible Metasurfaces: A Platform for Modulation and Sensing” Adv. Mater. 2021, 33 (27), 2100836.</li>
+                        <li style="line-height: 1.5;">S. Han, P. Pichappa, W. Wang, Y. K. Srivastava, M. V. Rybin, R. Singh “Extended Bound States in the Continuum with Symmetry-Broken Terahertz Dielectric Metasurfaces” Adv. Opt. Mater. 2020, 9(7), 2002001.</li>
+                        <li style="line-height: 1.5;">Q. Yang, M. Liu, S. Kruk, Y. Xu, Y. K. Srivastava, R. Singh, J. Han, Y. Kivshar, I. V Shadrivov “Polarization-Sensitive Dielectric Membrane Metasurfaces” Adv. Opt. Mater. 2020, 8(20), 2000555.</li>
+                        <li style="line-height: 1.5;">F. Couëdo, P. Amari, C. F.-Palma, C. Ulysse, Y. K. Srivastava, R. Singh, N. Bergeal, and J. Lesueur “Dynamic properties of high-T c superconducting nano-junctions made with a focused helium ion beam” Scientific Reports, 2020, 10 (1), 1.</li>
+                        <li style="line-height: 1.5;">A. Kumar, A. Solanki, M. Manjappa, S. Ramesh, Y. K. Srivastava, P. Agarwal, T. C. Sum, R. Singh, “Excitons in 2D Perovskites for Ultrafast Terahertz Photonic Devices” Science Advances, 2020, 6, 8, eaax8821.</li>
+                        <li style="line-height: 1.5;">Q. Yang, S. Kruk, Y. Xu, Q. Wang, Y. K. Srivastava, K. Koshelev, I. Kravchenko, R. Singh, J. Han, Y. Kivshar, I. Shadrivov “Mie-Resonant Membrane Huygens' Metasurfaces”, Adv. Funct. Mater, 2019, 30. 4 1906851.</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, R. T. Ako, M. Gupta, M. Bhaskaran, S. Sriram, and R. Singh “Terahertz sensing of 7 nm dielectric film with bound states in the continuum metasurfaces” Appl. Phy. Lett. 2019, 115 (15), 151105.</li>
+                        <li style="line-height: 1.5;">S. Han, M. V. Rybin, P. Pitchappa, Y. K. Srivastava, Y. S. Kivshar, and R. Singh “Guided-Mode Resonances in All-Dielectric Terahertz Metasurfaces” Adv. Opt. Mater. 2019, 8 (3) 1900959.</li>
+                        <li style="line-height: 1.5;">S. Han, L. Cong, Y. K. Srivastava, B. Qiang, M. V Rybin, A. Kumar, R. Jain, W. X. Lim, V. G. Achanta, S. S Prabhu, Q. Wang, Y. S Kivshar, and R. Singh "All-dielectric active photonics driven by bound states in the continuum", Adv. Mater, 2019, 31 (37), 1901921.</li>
+                        <li style="line-height: 1.5;">T. C. Tan, Y. K. Srivastava, M. Manjappa, E. Plum and R. Singh, "Lattice induced strong coupling and line narrowing of split resonances in metamaterials" Appl. Phy. Lett. 2018, 112 (20), 201111.</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, M. Manjappa, L. Cong, H.N.S.  Krishnamoorthy, V. Savinov, P. Pitchappa, and R. Singh "A superconducting dual channel photonic switch" Adv. Mater. 2018, 30, 1801257.</li>
+                        <li style="line-height: 1.5;">S. J. M. Rao, Y. K. Srivastava, G. Kumar, and D. R. Chowdhury, "Modulating fundamental resonance in capacitive coupled asymmetric terahertz metamaterials" Sci. Rep. 2018, 8 (1), 16773.</li>
+                        <li style="line-height: 1.5;">W. X. Lim, M. Manjappa, Y. K. Srivastava, L. Cong, A. Kumar, K. F. MacDonald, and R. Singh, "Ultrafast all-optical switching of germanium-based flexible metaphotonic devices" Adv. Mater. 2018, 30 (9), 1705331.</li>
+                        <li style="line-height: 1.5;">Kumar, Y. K. Srivastava, M. Manjappa and R. Singh, "Color-sensitive ultrafast optical modulation and switching of terahertz plasmonic devices" Adv. Opt. Mater. 2018, 6 (15), 1800030.</li>
+                        <li style="line-height: 1.5;">M. Gupta, Y. K. Srivastava, and R. Singh, “A toroidal metamaterial switch” Adv. Mater. 2018, 30, 1704845.</li>
+                        <li style="line-height: 1.5;">L. Cong, Y. K. Srivastava, H. Zhang, X. Zhang, J. Han, and R. Singh, "All-optical active THz metasurfaces for ultrafast polarization switching and dynamic beam splitting" Light: Science & Applications, 2018, 7(1), 28.</li>
+                        <li style="line-height: 1.5;">L. Cong, V. Savinov, Y. K. Srivastava, S. Han and R. Singh, “A Metamaterial analog of the Ising model" Adv. Mater. 2018, 30 (40), 1804210.</li>
+                        <li style="line-height: 1.5;">R. Yahiaoui, M. Manjappa, Y. K. Srivastava and R. Singh, "Active control and switching of broadband electromagnetically induced transparency in symmetric metadevices" Appl. Phy. Lett. 2017, 111 (2), 021101.</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, and R. Singh, "Impact of conductivity on Lorentzian and Fano resonant high-Q THz metamaterials: Superconductor, metal and perfect electric conductor" J. App. Phys. 2017, 122, 183104.</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, L. Cong, and R. Singh, "Dual-surface flexible THz Fano metasensor" Appl. Phy. Lett. 2017, 111, 201101.</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, A. Chaturvedi, M. Manjappa, A. Kumar, G. Dayal, C. Kloc, and R. Singh, "MoS2 for ultrafast all-optical switching and modulation of THz Fano metaphotonic devices", Adv. Opt. Mater. 2017, 5, 1700762.</li>
+                        <li style="line-height: 1.5;">M. Manjappa, S. P. Turaga, Y. K. Srivastava, A. A. Bettiol and R. Singh, "Magnetic annihilation of the dark mode in a strongly coupled bright–dark terahertz metamaterial" Opt. Lett. 2017, 42 (11), 2106.</li>
+                        <li style="line-height: 1.5;">M. Manjappa, Y. K. Srivastava, A. Solanki, A. Kumar, T. C. Sum, and R. Singh, "Hybrid lead halide perovskites for ultrasensitive photoactive switching in terahertz metamaterial devices" Adv. Mater. 2017, 29 (32), 1605881.</li>
+                        <li style="line-height: 1.5;">M. Manjappa*, Y. K. Srivastava*, L. Cong*, I Al-Naib, and R. Singh, "Active photo switching of sharp Fano resonances in THz metadevices" Adv. Mater. 2017, 29, 1603355 (*Co- first authors).</li>
+                        <li style="line-height: 1.5;">S. Han, M. Gupta, L. Cong, Y. K. Srivastava, and R. Singh, "Toroidal and magnetic Fano resonances in planar THz metamaterials" J. App. Phys. 2017, 122 (11), 113105.</li>
+                        <li style="line-height: 1.5;">M. Gupta, Y. K. Srivastava, M. Manjappa and R. Singh, "Sensing with toroidal metamaterial" Appl. Phy. Lett. 2017, 110 (12), 121108.</li>
+                        <li style="line-height: 1.5;">L. Cong, Y. K. Srivastava, A. Solanki, T. C. Sum, and R. Singh, "Perovskite as a platform for active flexible metaphotonic devices” ACS Photonics, 2017, 4(7), 1595.</li>
+                        <li style="line-height: 1.5;">L. Cong, Y. K. Srivastava, and R. Singh, "Tailoring the multipoles in THz toroidal metamaterials" Appl. Phy. Lett. 2017, 111 (8), 081108.</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, M. Manjappa, H. N. S. Krishnamurthy and R. Singh, "Accessing the high-Q dark plasmonic Fano resonances in superconductor metasurfaces", Adv. Opt. Mater. 2016, 4, 1875.</li>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, M. Manjappa, L. Cong, W. Cao, I. Al-Naib, W. Zhang, and R. Singh, "Ultrahigh-Q Fano resonances in terahertz metasurfaces: Strong influence of metallic conductivity at extremely low asymmetry" Adv. Opt. Mater. 2016. 4(3), 457.</li>
+                        <li style="line-height: 1.5;">M. Manjappa, Y. K. Srivastava and R. Singh, "Lattice-induced transparency in planar metamaterials" Phys. Rev. B 2016, 94 (16), 161103.</li>
+                        <li style="line-height: 1.5;">L. Cong, Y. K. Srivastava, and R. Singh, "Inter and intra-metamolecular interaction enabled broadband high-efficiency polarization control in metasurfaces" Appl. Phy. Lett. 2016, 108 (1), 011110.</li>
+                        <li style="line-height: 1.5;">L. Cong, Y. K. Srivastava, and R. Singh, "Near-field inductive coupling induced polarization control in metasurfaces" Adv. Opt. Mater. 2016, 4 (6), 848.</li>
+                        <h2 class="text-center">Conference Papers</h2>
+                        <li style="line-height: 1.5;">Y. K. Srivastava, F. Couёdo, P. Pitchappa, C. Feuillet-Palma, N. Bergeal, J. Lesueur and R. Singh, “Extremely Low threshold Optical Switching and Modulation of Ion-irradiated High-Tc Superconducting Metamaterials” 44th International Conference on Infrared, Millimeter, and Terahertz Waves (IRMMW-THz), 2019,1-2.</li>
+                        <li style="line-height: 1.5;">S. Han, L. Cong, Y. K. Srivastava, B. Qiang, M. V. Rybin, W. X. Lim, Q. J. Wang, Y. S. Kivshar and R. Singh, “Active high-Q dielectric terahertz supercavities” Conference on Lasers and Electro-Optics (CLEO), San Jose, California, 2018, pp. 1-2.</li>
+                        <li style="line-height: 1.5;">L. Cong, Y. K. Srivastava, and R. Singh, “Spin induced toroidal dipole in terahertz metasurfaces” Conference on Lasers and Electro-Optics (CLEO), San Jose, California, 2017, pp. 1-2.</li>
+                        <li style="line-height: 1.5;">M. Manjappa, Y. K. Srivastava, L. Cong, I. Al-Naib and R. Singh, “Tailoring the Fano resonances in terahertz metamaterials” International Conference on Optical MEMS & Nanophotonics (OMN), 2016, 1-2.</li>
+                        <h2 class="text-center">Conference Presentations</h2>
+                        <li style="line-height: 1.5;">Nanoscience and Nanotechnology Web Series - 2020 organized by PDPU Gandhinagar, <br>India Invited: “Superconductor Photonics: Ultrafast dual-channel switching and ultrathin superconducting metamaterials”.</li>
+                        <li style="line-height: 1.5;">ICOPS 2020 organized by Plasma Science and Application Committee (PSAC) of the IEEE Nuclear & Plasma Sciences Society, <br>Contributary: “Giant Kinetic Inductance in High-Tc Superconducting Metacavities.”</li>
+                        <li style="line-height: 1.5;">ICMAT 2019 organized by MRS Singapore, <br>Contributary: “Dual channel ultrafast superconductor metaswitch”</li>
+                        <li style="line-height: 1.5;">IPS 2018, Singapore, organized by Institute of Physics Singapore, <br>Contributary: “Dual channel ultrafast superconductor metaswitch”</li>
+                        <li style="line-height: 1.5;">ICAE2017, Jeju, South Korea, <br>Invited: “Conductivity engineered THz metamaterials: From superconductors to perfect electric conductors”.</li>
+                        <li style="line-height: 1.5;">META 2017, Icheon, Seoul, South Korea, <br>Contributary: "Sharp ultrafast Fano resonances in superconducting THz metamaterials”.</li>
+                        <li style="line-height: 1.5;">ICMAT 2017 organized by MRS Singapore, <br>Contributary: “High-Q Fano resonances in THz Superconducting metasurfaces: looking beyond metals”.</li>
+                        <li style="line-height: 1.5;">ICEM 2016 organized by MRS Singapore, <br>Contributary: “Strong Influence of Metallic Conductivity in Fano Resonant Metamaterials at Low Asymmetry”.</li>
+                        <li style="line-height: 1.5;">ICMAT 2015 organized by MRS Singapore, <br>Contributary: "Superconducting Fano Resonances in THz Metamaterials".</li>
+                        <li style="line-height: 1.5;">ICASME 14, organized by St. Xaviors Catholic Coll. of Eng. Tamilnadu, India, <br>Contributary: "Optimization of Process Parameters for high efficiency P3HT:PCBM based organic solar cells".</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!-- End portfolio section -->
+
+        <footer class="footer footer__section footer__bg" style="border-top: 2px solid white;">
+            <div class="container">
+                <div class="main__footer d-flex justify-content-center align-items-center">
+                    <p class="copyright__content mb-0 ">Copyright<span>
+                        </span> © 2023 | All Rights Reserved <a class="footer__menu--link" href="index.html">Ultrafast
+                            Terahertz Photonics Laboratory (UTPL)</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer section -->
+    </main>
+
+    <!-- Scroll top bar -->
+    <button id="scroll__top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="48"
+                d="M112 244l144-144 144 144M256 120v292" />
+        </svg>
+    </button>
+
+    <!-- All Script JS Plugins here  -->
+    <script src="assets/js/vendor/popper.js" defer="defer"></script>
+    <script src="assets/js/vendor/bootstrap.min.js" defer="defer"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Customscript js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Dark to light js -->
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.getElementById("light__to--dark")?.classList.add("dark--version");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.getElementById("light__to--dark")?.classList.remove("dark--version");
+        } 
+    </script>
+
+</body>
+
+</html>

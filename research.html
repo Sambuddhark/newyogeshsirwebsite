@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>UTPL - Research</title>
+    <meta name="description" content="Morden Bootstrap HTML5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon96.png">
+
+    <!-- ======= All CSS Plugins here ======== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Plugin css -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Dark css here -->
+    <link rel="stylesheet" href="assets/css/dark.css">
+
+    <!-- Rtl css here -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.documentElement.classList.add("dark");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.documentElement.classList.remove("dark");
+        } 
+    </script>
+
+</head>
+
+<body class="bg-dark_primary_bg">
+    <button class="light__dark--btn style__fixed" id="light__to--dark">
+        <svg class="dark--mode__icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+            <title>Moon</title>
+            <path
+                d="M264 480A232 232 0 0132 248c0-94 54-178.28 137.61-214.67a16 16 0 0121.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0121.06 21.06C442.28 426 358 480 264 480z">
+            </path>
+        </svg>
+        <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+            <title>Sunny</title>
+            <path
+                d="M256 118a22 22 0 01-22-22V48a22 22 0 0144 0v48a22 22 0 01-22 22zM256 486a22 22 0 01-22-22v-48a22 22 0 0144 0v48a22 22 0 01-22 22zM369.14 164.86a22 22 0 01-15.56-37.55l33.94-33.94a22 22 0 0131.11 31.11l-33.94 33.94a21.93 21.93 0 01-15.55 6.44zM108.92 425.08a22 22 0 01-15.55-37.56l33.94-33.94a22 22 0 1131.11 31.11l-33.94 33.94a21.94 21.94 0 01-15.56 6.45zM464 278h-48a22 22 0 010-44h48a22 22 0 010 44zM96 278H48a22 22 0 010-44h48a22 22 0 010 44zM403.08 425.08a21.94 21.94 0 01-15.56-6.45l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.55 37.56zM142.86 164.86a21.89 21.89 0 01-15.55-6.44l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.56 37.55zM256 358a102 102 0 11102-102 102.12 102.12 0 01-102 102z">
+            </path>
+        </svg>
+    </button>
+
+    <!-- Start header area -->
+    <header class="header__section  header__transparent">
+        <div class="header__sticky">
+            <div class="container">
+                <div class="main__header d-flex justify-content-between align-items-center">
+                    <div class="main__logo">
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.html">
+                                UTPL
+                            </a></h1>
+                    </div>
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor" stroke="currentColor" stroke-linecap="round"
+                                    stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352" />
+                            </svg>
+                            <span class="visually-hidden">Offcanvas Menu Open</span>
+                        </a>
+                    </div>
+                    <div class="main__header--right d-flex align-items-center d-none d-lg-block">
+                        <div class="header__menu menu_border--none">
+                            <nav class="header__menu--navigation">
+                                <ul class="header__menu--wrapper d-flex">
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="about.html">Prof. Srivastava</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="research.html">Research</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="publication.html">Publication</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="project.html">Projects</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="group.html">Group</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="lab.html">Lab</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="opportunity.html">Opportunities</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header area -->
+
+    <!-- Start Offcanvas header menu -->
+    <div class="offcanvas__header">
+        <div class="offcanvas__inner">
+            <div class="offcanvas__logo">
+                <a class="offcanvas__logo_link" href="index.html">
+                    <h1>UTPL</h1>
+                </a>
+                <button class="offcanvas__close--btn" data-offcanvas>close</button>
+            </div>
+            <nav class="offcanvas__menu">
+                <ul class="offcanvas__menu_ul">
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="index.html">Home</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="about.html">Prof. Srivastava</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="research.html">Research</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="publication.html">Publication</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="project.html">Projects</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="group.html">Group</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="lab.html">Lab</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="opportunity.html">Opportunities</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Offcanvas header menu -->
+
+    <main class="main__content_wrapper">
+        <!-- Start portfolio section -->
+        <section class="portfolio__section portfolio__section--bg section--padding" id="portfolio">
+            <div class="page__heading">
+                <!-- <h1 class="page__heading--title">Research</h1> -->
+                <h2 class="page__heading--subtitle" style="padding-bottom: 100px;"><span>RESEARCH</span> AREA</h2>
+            </div><br>
+            <div class="container">
+                <div class="portfolio__section--inner">
+                    <div class="portfolio__grid mb--n30">
+                        <div class="row">
+                            <div class="element-item web" data-category="web">
+                                <div class="portfolio__card">
+                                    <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Superconductor">
+                                        <div class="portfolio__image--card" style="border: 1px solid red;">
+                                            <img src="assets/img/other/Superconductor.png" alt="img">
+                                        </div>
+                                        <div class="portfolio__content">
+                                            <span class="portfolio__zoom text-white">
+                                                <h1>UTPL</h1>
+                                            </span>
+                                            <h3 class="portfolio__title text-white">Superconductor Photonics</h3>
+                                            <p class="portfolio__desc text-white">Click to know more</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal" data-bs-target="#Superconductor">
+                                <h3 class="portfolio__title text-center">Superconductor <br>Photonics</h3></a>
+                            </div>
+                            <div class="element-item web" data-category="web">
+                                <div class="portfolio__card">
+                                    <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Ultrafast">
+                                        <div class="portfolio__image--card" style="border: 1px solid red;">
+                                            <img src="assets/img/other/Ultrafast.png" alt="img">
+                                        </div>
+                                        <div class="portfolio__content">
+                                            <span class="portfolio__zoom text-white">
+                                                <h1>UTPL</h1>
+                                            </span>
+                                            <h3 class="portfolio__title text-white">Ultrafast Quantum Material Photonics
+                                            </h3>
+                                            <p class="portfolio__desc text-white">Click to know more</p>
+                                        </div>
+                                    </a>
+                                </div><a href="#" class="popup-modal--open display-block" data-bs-toggle="modal" data-bs-target="#Ultrafast">
+                                <h3 class="portfolio__title text-center">Ultrafast Quantum Material Photonics</h3></a>
+                            </div>
+                            <div class="element-item web" data-category="web">
+                                <div class="portfolio__card">
+                                    <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Dielectric">
+                                        <div class="portfolio__image--card" style="border: 1px solid red;">
+                                            <img src="assets/img/other/Dielectric.png" alt="img">
+                                        </div>
+                                        <div class="portfolio__content">
+                                            <span class="portfolio__zoom text-white">
+                                                <h1>UTPL</h1>
+                                            </span>
+                                            <h3 class="portfolio__title text-white">Dielectric Metasurfaces</h3>
+                                            <p class="portfolio__desc text-white">Click to know more</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal" data-bs-target="#Dielectric">
+                                <h3 class="portfolio__title text-center">Dielectric <br>Metasurfaces</h3></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="element-item web" data-category="web">
+                                <div class="portfolio__card">
+                                    <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Meta-Sensors">
+                                        <div class="portfolio__image--card" style="border: 1px solid red;">
+                                            <img src="assets/img/other/Meta-Sensors.png" alt="img">
+                                        </div>
+                                        <div class="portfolio__content">
+                                            <span class="portfolio__zoom text-white">
+                                                <h1>UTPL</h1>
+                                            </span>
+                                            <h3 class="portfolio__title text-white">THz Meta-Sensors</h3>
+                                            <p class="portfolio__desc text-white">Click to know more</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Meta-Sensors">
+                                <h3 class="portfolio__title text-center">THz Meta-Sensors</h3></a>
+                            </div>
+                            <div class="element-item web" data-category="web">
+                                <div class="portfolio__card">
+                                    <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Spintronics">
+                                        <div class="portfolio__image--card" style="border: 1px solid red;">
+                                            <img src="assets/img/other/11.png" alt="img">
+                                            <!-- <h1 class="page__heading--title text-center" style="height: 312px;word-wrap: break-word;">THz Spintronics</h1> -->
+                                        </div>
+                                        <div class="portfolio__content">
+                                            <span class="portfolio__zoom text-white">
+                                                <h1>UTPL</h1>
+                                            </span>
+                                            <h3 class="portfolio__title text-white">THz Spintronics</h3>
+                                            <p class="portfolio__desc text-white">Click to know more</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Spintronics">
+                                <h3 class="portfolio__title text-center">THz Spintronics</h3></a>
+                            </div>
+                            <div class="element-item web" data-category="web">
+                                <div class="portfolio__card">
+                                    <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Materials">
+                                        <div class="portfolio__image--card" style="border: 1px solid red;">
+                                            <img src="assets/img/other/10.png" alt="img">
+                                            <!-- <h1 class="page__heading--title text-center" style="height: 312px;word-wrap: break-word;">Probing New Materials</h1> -->
+                                        </div>
+                                        <div class="portfolio__content">
+                                            <span class="portfolio__zoom text-white">
+                                                <h1>UTPL</h1>
+                                            </span>
+                                            <h3 class="portfolio__title text-white">Probing New Materials</h3>
+                                            <p class="portfolio__desc text-white">Click to know more</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="#" class="popup-modal--open display-block" data-bs-toggle="modal"
+                                        data-bs-target="#Materials">
+                                <h3 class="portfolio__title text-center">Probing New Materials</h3></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End portfolio section -->
+
+        <footer class="footer footer__section footer__bg" style="border-top: 2px solid white;">
+            <div class="container">
+                <div class="main__footer d-flex justify-content-center align-items-center">
+                    <p class="copyright__content mb-0 ">Copyright<span>
+                        </span> © 2023 | All Rights Reserved <a class="footer__menu--link" href="index.html">Ultrafast Terahertz Photonics Laboratory (UTPL)</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer section -->
+    </main>
+
+    <!-- Start Research Modals -->
+    <div class="modal fade" id="Superconductor" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered portfolio__modal--dialog">
+            <div class="modal-content modal-content-height">
+                <button type="button" class="btn-close portfolio__modal--colse" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body portfolio__modal--body">
+                    <h2 class="portfolio__modal--title text-center mb-30">Superconductor Photonics</h2>
+                    <p class="portfolio__modal--info__desc mb-30">Under the broad scope of superconductor terahertz
+                        photonics, we exploit the extraordinary potential of high-Tc superconductors in realizing
+                        low-loss, fully switchable metamaterials for several exciting and valuable phenomenon, including
+                        ultra-high-Q resonances, deep subwavelength sub-London penetration depth thick metamaterials,
+                        ultrafast modulators, dual channel ultrafast switches and terahertz superinductors. We also
+                        harness the potential of the high-Tc superconductor metamaterials for probing emergent transient
+                        phases such as light-induced superconductivity, bosonic metallic states, and charge density
+                        waves in quantum solids upon photoexcitation with an optical pulse. The efforts are also
+                        underway to develop kinetic inductance-based single photon detectors/ photon counters and
+                        Josephson junction/SQUID metamaterials.</p>
+                    <div class="portfolio__modal--info__media">
+                        <img src="assets/img/other/Superconductor Photonics  730x366.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Ultrafast" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered portfolio__modal--dialog">
+            <div class="modal-content modal-content-height">
+                <button type="button" class="btn-close portfolio__modal--colse" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body portfolio__modal--body">
+                    <h2 class="portfolio__modal--title text-center mb-30">Ultrafast Quantum Material Photonics</h2>
+                    <p class="portfolio__modal--info__desc mb-30">Under this domain, we integrate the different active
+                        quantum materials to the metamaterials and study light-matter interaction to realize the active
+                        THz devices, which are facile, cost-effective, and ultrafast in nature. We would control the
+                        Light-matter interaction by applying external perturbations, for instance, optical irradiation,
+                        electric field and magnetic field, to develop all-optical, electro-optic and magneto-optic
+                        terahertz photonic devices.</p>
+                    <div class="portfolio__modal--info__media">
+                        <img src="assets/img/other/Ultrafast Quantum Material Photonics.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Dielectric" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered portfolio__modal--dialog">
+            <div class="modal-content modal-content-height">
+                <button type="button" class="btn-close portfolio__modal--colse" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body portfolio__modal--body">
+                    <h2 class="portfolio__modal--title text-center mb-30">Dielectric Metasurfaces</h2>
+                    <p class="portfolio__modal--info__desc mb-30">In this domain, we design, fabricate and characterize
+                        all-dielectric metasurfaces that offer a low-loss platform for efficiently manipulating
+                        terahertz waves. These CMOS-compatible THz devices enable all-optical switches with extremely
+                        sharp resonances for numerous applications in lasing, mode multiplexing and biosensing.</p>
+                    <div class="portfolio__modal--info__media">
+                        <img src="assets/img/other/Dielectric Metasurfaces.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Meta-Sensors" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered portfolio__modal--dialog">
+            <div class="modal-content modal-content-height">
+                <button type="button" class="btn-close portfolio__modal--colse" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body portfolio__modal--body">
+                    <h2 class="portfolio__modal--title text-center mb-30">THz Meta-Sensors</h2>
+                    <p class="portfolio__modal--info__desc mb-30">This domain aims to develop ultrasensitive THz sensors
+                        for broad range of applications for social issues needs like health, biochemical, environment,
+                        astronomy, security, and food, for which THz technology holds promise for disruptive and unique
+                        solutions.</p>
+                    <div class="portfolio__modal--info__media">
+                        <img src="assets/img/other/THz Meta-Sensors.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Spintronics" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered portfolio__modal--dialog">
+            <div class="modal-content modal-content-height">
+                <button type="button" class="btn-close portfolio__modal--colse" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body portfolio__modal--body">
+                    <h2 class="portfolio__modal--title text-center mb-30">THz Spintronics</h2>
+                    <p class="text-center">This work uses an intense femtosecond laser pulse to drive the spins far from equilibrium in a Ferromagnet (FM), which causes ultrafast demagnetization and superdiffusion at sub-picosecond time scales. This process generates the transient spin current in the FM layer, which on entering in a material with high spin-orbit coupling, causes a transient charge current. This transient charge current leads to the emission of the terahertz pulses and opens new pathways for efficient terahertz sources and spin devices.</p>
+                    <div class="portfolio__modal--info__media">
+                        <img src="assets/img/other/8.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="Materials" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered portfolio__modal--dialog">
+            <div class="modal-content modal-content-height">
+                <button type="button" class="btn-close portfolio__modal--colse" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="modal-body portfolio__modal--body">
+                    <h2 class="portfolio__modal--title text-center mb-30">Probing New Materials</h2>
+                    <p class="portfolio__modal--info__desc mb-30">We exploit ultrafast terahertz measurements to investigate a large number of elementary and collective excitations of the correlated materials having phonons, magnons, polaritons, polarons, plasmons, and superconducting gap excitations. We will drive these excitations in these materials using optical pulses and which will be probed using coherent THz waves, leading to the discovery of new phenomena, phases, and functionalities.</p>
+                    <div class="portfolio__modal--info__media">
+                        <img src="assets/img/other/7.png" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Research Modals -->
+
+    <!-- Scroll top bar -->
+    <button id="scroll__top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="48"
+                d="M112 244l144-144 144 144M256 120v292" />
+        </svg>
+    </button>
+
+    <!-- All Script JS Plugins here  -->
+    <script src="assets/js/vendor/popper.js" defer="defer"></script>
+    <script src="assets/js/vendor/bootstrap.min.js" defer="defer"></script>
+    <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+    <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+
+    <!-- Customscript js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Dark to light js -->
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+            document.getElementById("light__to--dark")?.classList.add("dark--version");
+        }
+        if (localStorage.getItem("theme-color") === "light") {
+            document.getElementById("light__to--dark")?.classList.remove("dark--version");
+        } 
+    </script>
+
+</body>
+
+</html>

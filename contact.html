@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UTPL - Contact</title>
+  <meta name="description" content="Morden Bootstrap HTML5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon32.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon96.png">
+    
+   <!-- ======= All CSS Plugins here ======== -->
+  <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+  <!-- Plugin css -->
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+
+  <!-- Custom Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Dark css here -->
+  <link rel="stylesheet" href="assets/css/dark.css">
+
+  <!-- Rtl css here -->
+  <link rel="stylesheet" href="assets/css/rtl.css">
+
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    } 
+    if (localStorage.getItem("theme-color") === "light") {
+      document.documentElement.classList.remove("dark");
+    } 
+  </script>
+
+</head>
+
+<body class="bg-dark_primary_bg">
+    <button class="light__dark--btn style__fixed" id="light__to--dark">
+        <svg class="dark--mode__icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><title>Moon</title><path d="M264 480A232 232 0 0132 248c0-94 54-178.28 137.61-214.67a16 16 0 0121.06 21.06C181.07 76.43 176 104.66 176 136c0 110.28 89.72 200 200 200 31.34 0 59.57-5.07 81.61-14.67a16 16 0 0121.06 21.06C442.28 426 358 480 264 480z"></path></svg>
+        <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><title>Sunny</title><path d="M256 118a22 22 0 01-22-22V48a22 22 0 0144 0v48a22 22 0 01-22 22zM256 486a22 22 0 01-22-22v-48a22 22 0 0144 0v48a22 22 0 01-22 22zM369.14 164.86a22 22 0 01-15.56-37.55l33.94-33.94a22 22 0 0131.11 31.11l-33.94 33.94a21.93 21.93 0 01-15.55 6.44zM108.92 425.08a22 22 0 01-15.55-37.56l33.94-33.94a22 22 0 1131.11 31.11l-33.94 33.94a21.94 21.94 0 01-15.56 6.45zM464 278h-48a22 22 0 010-44h48a22 22 0 010 44zM96 278H48a22 22 0 010-44h48a22 22 0 010 44zM403.08 425.08a21.94 21.94 0 01-15.56-6.45l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.55 37.56zM142.86 164.86a21.89 21.89 0 01-15.55-6.44l-33.94-33.94a22 22 0 0131.11-31.11l33.94 33.94a22 22 0 01-15.56 37.55zM256 358a102 102 0 11102-102 102.12 102.12 0 01-102 102z"></path></svg>
+    </button>
+    
+    <!-- Start header area -->
+    <header class="header__section  header__transparent">
+        <div class="header__sticky">
+            <div class="container">
+                <div class="main__header d-flex justify-content-between align-items-center">
+                    <div class="main__logo">
+                        <h1 class="main__logo--title"><a class="main__logo--link" href="index.html">
+                            UTPL
+                        </a></h1>
+                    </div>
+                    <div class="offcanvas__header--menu__open ">
+                        <a class="offcanvas__header--menu__open--btn" href="javascript:void(0)" data-offcanvas>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon offcanvas__header--menu__open--svg" viewBox="0 0 512 512"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"/></svg>
+                            <span class="visually-hidden">Offcanvas Menu Open</span>
+                        </a>
+                    </div>
+                    <div class="main__header--right d-flex align-items-center d-none d-lg-block">
+                        <div class="header__menu menu_border--none">
+                            <nav class="header__menu--navigation">
+                                <ul class="header__menu--wrapper d-flex">
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="index.html">Home</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="about.html">Prof. Srivastava</a>  
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="research.html">Research</a>  
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="publication.html">Publication</a>  
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="project.html">Projects</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="group.html">Group</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="lab.html">Lab</a>  
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="opportunity.html">Opportunities</a>
+                                    </li>
+                                    <li class="header__menu--items">
+                                        <a class="header__menu--link" href="contact.html">Contact</a>  
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header area -->
+
+    <!-- Start Offcanvas header menu -->
+    <div class="offcanvas__header">
+        <div class="offcanvas__inner">
+            <div class="offcanvas__logo">
+                <a class="offcanvas__logo_link" href="index.html">
+                    <h1>UTPL</h1>
+                    <!-- <img src="assets/img/logo/nav-log.png" alt="Logo-img" width="158" height="36"> -->
+                </a>
+                <button class="offcanvas__close--btn" data-offcanvas>close</button>
+            </div>
+            <nav class="offcanvas__menu">
+                <ul class="offcanvas__menu_ul">
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="index.html">Home</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="about.html">Prof. Srivastava</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="research.html">Research</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="publication.html">Publication</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="project.html">Projects</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="group.html">Group</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="lab.html">Lab</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="opportunity.html">Opportunities</a>
+                    </li>
+                    <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- End Offcanvas header menu -->
+
+    <main class="main__content_wrapper">
+
+        <!-- Start contact section -->
+        <section class="contact__section contact__section--bg" id="contact">
+            <div class="page__heading">
+                <!-- <h1 class="page__heading--title">Contact Me</h1> -->
+                <h2 class="page__heading--subtitle" style="padding-bottom: 100px;" ><span>CONTACT</span> ME</h2> 
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="contact__left">
+                            <div class="section__heading mb-50">
+                                <span class="section__heading--subtitle text__secondary">CONTACT</span>
+                                <!-- <h2 class="section__heading--title mb-10">Get I contact work </h2>  -->
+                                <p class="section__heading--desc">Please communicate at the following address or email/phone us to discuss the topics of mutual interest.</p>
+                            </div>
+                            <form class="contact__form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
+                                        <input class="contact__input--field" id="name" placeholder="Your name" type="text">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 mb-30">
+                                        <input class="contact__input--field" id="email" placeholder="Your email" type="text">
+                                    </div>
+                                </div>
+                                <textarea class="contact__textarea--field" id="message" placeholder="Message"></textarea>
+                                <button class="contact__button primary__btn">Send Request</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact__info">
+                            <div class="contact__info--items d-flex align-items-center">
+                                <span class="contact__info--icon">
+                                    <svg width="25" height="34" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"></path></svg>
+                                </span>
+                                <div class="contact__info--content">
+                                    <h3 class="contact__info--title">Call Me</h3>
+                                    <p class="contact__info--desc">
+                                        <a href="tel:+91 7054748238">+91 7054748238</a> 
+                                        <!-- <br> -->
+                                        <!-- <a href="tel:+917054748238">+917054748238</a> -->
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact__info--items d-flex align-items-center">
+                                <span class="contact__info--icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </span>
+                                <div class="contact__info--content">
+                                    <h3 class="contact__info--title">Email Us</h3>
+                                    <p class="contact__info--desc">
+                                        <a href="mailto:yogesh.srtv@gmail.com">yogesh.srtv@gmail.com</a> <br>
+                                        <a href="mailto:yogesh.srivastava@phy.iith.ac.in">yogesh.srivastava@phy.iith.ac.in</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="contact__info--items d-flex align-items-center">
+                                <span class="contact__info--icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </span>
+                                <div class="contact__info--content">
+                                    <h3 class="contact__info--title">Address</h3>
+                                    <p class="contact__info--desc">
+                                        Academic Block A, 718G,<br>Department of Physics,<br>
+                                        Indian Institute of Technology Hyderabad Kandi,<br>
+                                        Sangareddy-502 285, Telangana, India
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End contact section -->
+
+        <!-- Start contact map area -->
+        <div class="contact__map--area">
+            <div class="container">
+                <iframe class="contact__map--iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.169111428747!2d78.12046517503957!3d17.594702683328318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbefdc136bffbb%3A0x73414ff6594c9191!2sIndian%20Institute%20of%20Technology%20Hyderabad!5e0!3m2!1sen!2sin!4v1685354456091!5m2!1sen!2sin" width="600" height="450" style="border: 1px solid #EE5F38;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- End contact map area -->
+
+        <!-- Start footer section -->
+        <footer class="footer footer__section footer__bg" style="border-top: 2px solid white;">
+            <div class="container">
+                <div class="main__footer d-flex justify-content-center align-items-center">
+                    <p class="copyright__content mb-0 ">Copyright<span>
+                        </span> © 2023 | All Rights Reserved <a class="footer__menu--link" href="index.html">Ultrafast Terahertz Photonics Laboratory (UTPL)</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer section -->
+
+    </main>
+
+    <!-- Scroll top bar -->
+    <button id="scroll__top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path fill="none" stroke="currentColor" stroke-linecap="round"  stroke-width="48" d="M112 244l144-144 144 144M256 120v292"/>
+        </svg>
+    </button>
+    
+   <!-- All Script JS Plugins here  -->
+   <script src="assets/js/vendor/popper.js" defer="defer"></script>
+   <script src="assets/js/vendor/bootstrap.min.js" defer="defer"></script>
+   <script src="assets/js/plugins/swiper-bundle.min.js"></script>
+   <script src="assets/js/plugins/isotope.pkgd.min.js"></script>
+   <script src="assets/js/plugins/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Customscript js -->
+  <script src="assets/js/script.js"></script>
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!-- Dark to light js -->
+  <script>
+    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.getElementById("light__to--dark")?.classList.add("dark--version");
+    } 
+    if (localStorage.getItem("theme-color") === "light") {
+      document.getElementById("light__to--dark")?.classList.remove("dark--version");
+    } 
+  </script>
+  
+</body>
+</html>
